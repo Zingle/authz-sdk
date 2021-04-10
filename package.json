@@ -1,0 +1,15 @@
+{
+  "name": "@zingle/authz-sdk",
+  "version": "0.0.1",
+  "description": "authz client SDK",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Zingle/authz-sdk.git"
+  },
+  "author": "Richard Remer <reanjr@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zingle/authz-sdk/issues"
+  },
+  "homepage": "https://github.com/Zingle/authz-sdk#readme"
+}
