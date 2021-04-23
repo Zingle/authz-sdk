@@ -7,7 +7,8 @@ default:
 
 release:
 	mkdir src/v$(VERSION)
-	cp -rT src/beta src/v$(VERSION)
-	ln -nsf v$(VERSION) src/latest
-	ln -nsf v$(VERSION) src/v$(MAJOR).$(MINOR)
-	ln -nsf v$(MAJOR).$(MINOR) src/v$(MAJOR)
+	rm -fr src/latest src/v$(MAJOR) src/v$(MAJOR).$(MINOR)
+	cp -rT src/beta src/latest
+	cp -rT src/beta src/v$(MAJOR).$(MINOR).$(REV)
+	cp -rT src/beta src/v$(MAJOR).$(MINOR)
+	cp -rT src/beta src/v$(MAJOR)
